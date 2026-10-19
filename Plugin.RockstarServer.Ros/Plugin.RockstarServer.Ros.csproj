@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Authors>ServerEmus</Authors>
+    <Company>ServerEmus</Company>
+    <Copyright>$(Company)</Copyright>
+    <Version>0.0.1</Version>
+    <FileVersion>$(Version)</FileVersion>
+    <AssemblyVersion>$(Version)</AssemblyVersion>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ServerEmus.ServerShared" Version="0.0.16" PrivateAssets="all" ExcludeAssets="runtime" ReferenceOutputAssembly="false" Private="true">
+      <IncludeAssets>compile; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="ModdableWebServer" />
+    <Using Include="ModdableWebServer.Attributes" />
+    <Using Include="ModdableWebServer.Helper" />
+    <Using Include="ModdableWebServer.Senders" />
+    <Using Include="Serilog" />
+  </ItemGroup>
+
+</Project>
